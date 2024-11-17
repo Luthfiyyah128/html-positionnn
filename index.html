@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Kue Kesukaan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2b8510;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .menu-container {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+            background: rgb(156, 204, 23);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #fcfcfc;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .cake-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .cake-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .cake-item:hover {
+            transform: translateY(-2px);
+        }
+        .cake-img {
+            width: 50%;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 5px 5px 0 0;
+        }
+        .cake-info {
+            padding: 15px;
+            text-align: center;
+            background-color: #fff;
+        }
+        .cake-name {
+            font-size: 1.2em;
+            color: #5a3e36;
+            margin: 10px 0;
+        }
+        .cake-price {
+            font-size: 1em;
+            color: #d36356;
+            margin: 0;
+        }
+        .cake-btn {
+            display: inline-block;
+            padding: 8px 16px;
+            margin-top: 15px;
+            background-color: #5a3e36;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .cake-btn:hover {
+            background-color: #a05a52;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <h1>Daftar Kue Kesukaan</h1>
+        <div class="cake-grid">
+            <div class="cake-item">
+            </div>
+            <div class="cake-item">
+                <img src="kue keju.jfif" alt="Kue Keju" class="kue keju.jfif">
+                <div class="cake-info">
+                    <h3 class="cake-name">Kue Keju</h3>
+                    <p class="cake-price">Rp 55,000</p>
+                    <button class="cake-btn">Pesan Sekarang</button>
+                </div>
+            </div>
+            <div class="cake-item">
+                <img src="kue durian.jfif" alt="Kue Durian" class="kue durian.jfif">
+                <div class="cake-info">
+                    <h3 class="cake-name">Kue Durian</h3>
+                    <p class="cake-price">Rp 60,000</p>
+                    <button class="cake-btn">Pesan Sekarang</button>
+                </div>
+            </div>
+            <div class="cake-item">
+                <img src="kue red velvet.jfif" alt="Kue Red Velvet" class="kue red velvet.jfif">
+                <div class="cake-info">
+                    <h3 class="cake-name">Kue Red Velvet</h3>
+                    <p class="cake-price">Rp 65,000</p>
+                    <button class="cake-btn">Pesan Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
